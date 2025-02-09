@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3042706071251222729}
+  - component: {fileID: 258786295594569263}
+  - component: {fileID: 7217793399679702819}
   m_Layer: 0
   m_Name: BigFIre
   m_TagString: Untagged
@@ -35,6 +37,40 @@ Transform:
   - {fileID: 1667504922163016816}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.141, y: -100.457, z: 0.29}
+--- !u!135 &258786295594569263
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749380380882426205}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7217793399679702819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2749380380882426205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c578d5f30b275d24f8d533094b3688cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterEF: {fileID: 8463710065906958267, guid: c415b4d3a832e994fba885e051eb3065, type: 3}
 --- !u!1001 &2599598164653548052
 PrefabInstance:
   m_ObjectHideFlags: 0
