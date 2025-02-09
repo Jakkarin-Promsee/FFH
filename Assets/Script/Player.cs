@@ -17,8 +17,6 @@ public class Player : MonoBehaviour
 
         // Get left/right input (A/D or Left/Right arrows)
         // float horizontalInput = Input.GetAxis("Horizontal");
-        float horizontalInput = 0;
-        transform.Translate(Vector3.right * horizontalInput * sideSpeed * Time.deltaTime);
 
         // Drop water when pressing Enter
         if (Input.GetKeyDown(KeyCode.Return))

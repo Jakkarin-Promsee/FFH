@@ -7,12 +7,7 @@ public class WaterFall : MonoBehaviour
 {
     public float fallingSpeed = 10f;  // Constant forward speed
 
-    public Transform transform;
 
-    private void Start()
-    {
-        transform = GetComponent<Transform>();
-    }
     private void Update()
     {
         transform.Translate(Vector3.down * fallingSpeed * Time.deltaTime);
