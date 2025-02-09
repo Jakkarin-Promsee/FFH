@@ -742,6 +742,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7011850346402565289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6111560599846543365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678348975891969385}
+  m_Layer: 0
+  m_Name: Bomp (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678348975891969385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6111560599846543365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.5, y: -0.2, z: 6.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7011850346402565289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7046847655286003344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2190623370916863025}
+  m_Layer: 0
+  m_Name: Bomp (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2190623370916863025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046847655286003344}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.5, y: -0.2, z: 65.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7011850346402565289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7212484086131626526
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +840,8 @@ Transform:
   - {fileID: 1642410243645589207}
   - {fileID: 1228788853021587451}
   - {fileID: 402036406975323869}
+  - {fileID: 678348975891969385}
+  - {fileID: 2190623370916863025}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8664879023498474734
@@ -798,10 +862,13 @@ MonoBehaviour:
   - {fileID: 7231271372739869075}
   - {fileID: 1875364460283232312}
   - {fileID: 4608942784037196812}
-  bombSpots: []
+  bombSpots:
+  - {fileID: 6111560599846543365}
+  - {fileID: 7046847655286003344}
   firePrefab: {fileID: 2749380380882426205, guid: f9e91595152886c41bbe04c3dfba7a24,
     type: 3}
-  bombPrefab: {fileID: 0}
+  bombPrefab: {fileID: 856178570260738457, guid: e131fcde03192f54a9a67adfa619d793,
+    type: 3}
 --- !u!1 &7231271372739869075
 GameObject:
   m_ObjectHideFlags: 0

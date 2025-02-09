@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c578d5f30b275d24f8d533094b3688cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  db: {fileID: 11400000, guid: 6be2ad1dfc9ad3e49882e1ccb4ae0b16, type: 2}
   waterEF: {fileID: 8463710065906958267, guid: c415b4d3a832e994fba885e051eb3065, type: 3}
 --- !u!1001 &2599598164653548052
 PrefabInstance:

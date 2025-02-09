@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public Db db;
+    public TextMeshPro text;
+    public TextMeshPro textBg;
     public float forwardSpeed = 10f;  // Constant forward speed
     public float sideSpeed = 5f;      // Left/right movement speed
     public GameObject waterEffect;    // Water effect prefab
@@ -13,8 +18,18 @@ public class Player : MonoBehaviour
 
     float currentDropT = 0;
 
+    private void Start()
+    {
+        db.Reset();
+    }
+
     private void Update()
     {
+        db.AddTime(Time.deltaTime);
+
+        string txt = "Score: " + db.score + "/10";
+        text.text = txt;
+        textBg.text = txt;
 
         // Move forward automatically
         transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);

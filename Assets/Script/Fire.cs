@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
+    public Db db;
     public GameObject waterEF;
 
     private void OnTriggerEnter(Collider other)
@@ -16,6 +17,8 @@ public class Fire : MonoBehaviour
 
     IEnumerator DestroyFire()
     {
+        db.AddScore(Random.Range(1, 3));
+
         // Instantiate the water effect at the fire’s position
         GameObject effect = Instantiate(waterEF, transform.position, Quaternion.identity);
 
