@@ -23,7 +23,7 @@ public class MapPiece : MonoBehaviour
         // Randomly place fires
         foreach (GameObject spot in fireSpots)
         {
-            if (Random.value > 0.5f) // 50% chance to spawn fire
+            if (Random.value > 0f) // 50% chance to spawn fire
             {
                 Instantiate(firePrefab, spot.transform.position, Quaternion.identity, transform);
             }

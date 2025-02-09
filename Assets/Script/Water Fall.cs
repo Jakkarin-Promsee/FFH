@@ -11,7 +11,7 @@ public class WaterFall : MonoBehaviour
     private void Update()
     {
         transform.Translate(Vector3.down * fallingSpeed * Time.deltaTime);
-
+        transform.Translate(Vector3.forward * 5 * Time.deltaTime);
 
         if (transform.position.y < 0.0f)
             Destroy(gameObject);

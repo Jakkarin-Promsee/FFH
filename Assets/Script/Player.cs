@@ -8,10 +8,14 @@ public class Player : MonoBehaviour
     public float sideSpeed = 5f;      // Left/right movement speed
     public GameObject waterEffect;    // Water effect prefab
     public Transform dropPoint;       // Where water drops from
+    public float dropCD = 0.1f;
     public AudioSource waterSFX;      // Sound effect for dropping water
+
+    float currentDropT = 0;
 
     private void Update()
     {
+
         // Move forward automatically
         transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
 
@@ -19,8 +23,9 @@ public class Player : MonoBehaviour
         // float horizontalInput = Input.GetAxis("Horizontal");
 
         // Drop water when pressing Enter
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKey(KeyCode.Return) && currentDropT < Time.time)
         {
+            currentDropT = Time.time + dropCD;
             DropWater();
         }
     }

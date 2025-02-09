@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting.ReorderableList.Element_Adder_Menu;
 using UnityEngine;
 
 public class EndLessBG : MonoBehaviour
 {
+    public GameObject[] testMap;
     public Transform helicopter;   // Helicopter moves forward
     public GameObject[] backgrounds; // Background prefabs (Forest, Village)
     public int initialSpawnCount = 3; // How many maps to start with
@@ -20,6 +23,11 @@ public class EndLessBG : MonoBehaviour
         for (int i = 1; i < initialSpawnCount; i++)
         {
             firstBackground = SpawnNewBackground(firstBackground.GetComponent<MapPiece>().endMarker.position);
+        }
+
+        for (int i = 0; i < testMap.Length; i++)
+        {
+            testMap[i].gameObject.SetActive(false);
         }
     }
 
