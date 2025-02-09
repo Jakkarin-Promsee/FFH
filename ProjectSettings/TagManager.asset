@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - GameUI
   - Water
   - UI
-  - 
+  - volume
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: GameUI
+    uniqueID: 521276047
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

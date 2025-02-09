@@ -21,6 +21,8 @@ Your Game Name is a 2D shooter RPG where players control a military helicopter i
 
 Thank you to the following creators for providing free assets used in this game:
 
+- [**3D Modern Menu UI**](https://assetstore.unity.com/packages/tools/gui/3d-modern-menu-ui-116144) - Game UI
+
 - [**Military Helicopter**](https://assetstore.unity.com/packages/3d/vehicles/air/military-helicopter-3922) – Main player character
 
 - [**Free Low Poly Nature Forest**](https://assetstore.unity.com/search#q=forest%20low%20poly) - Forest assets and background
