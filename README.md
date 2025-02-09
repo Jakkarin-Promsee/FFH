@@ -2,7 +2,8 @@
 
 ## 🎮 About the Game
 
-Your Game Name is a 2D shooter RPG where players control a military helicopter in a low-poly forest environment. Engage in intense aerial combat, avoid obstacles, and use strategic firepower to defeat enemies while exploring a beautifully crafted world.
+🚁 Helicopter Fire Rescue is a fast-paced endless 3D game where you take control of a rescue helicopter flying through a dangerous forest, putting out fires while avoiding deadly obstacles. Your mission is to save the burning areas by dropping water while skillfully maneuvering through a landscape filled with houses, explosive bombs, and unpredictable terrain.
+🔥 How long can you survive in this high-stakes rescue mission?
 
 ## 🕹️ Features
 
@@ -10,6 +11,13 @@ Your Game Name is a 2D shooter RPG where players control a military helicopter i
 - 🌲 Low-Poly Forest Environment – Explore an immersive forest landscape with detailed assets.
 - 🔥 Explosive Fire Effects – Dynamic fire, water, and explosion particle effects enhance the gameplay.
 - 🎨 Stylized Visuals – A visually appealing low-poly art style.
+
+## 🎯 Objective:
+
+- Fly forward continuously through the forest.
+- Put out fires before they spread too far.
+- Avoid crashing into houses and bombs.
+- Survive as long as possible!
 
 ## 🛠️ How to Play
 
@@ -37,8 +45,14 @@ Thank you to the following creators for providing free assets used in this game:
 
 - [**Simple Particles FX (Toon Effects)**](https://assetstore.unity.com/packages/vfx/particles/simple-particles-fx-toon-effects-244171) - Water splash and explosion effects
 
-## 🚀 Installation & Setup
+## 🚀 Installation & Setup Game
 
-1. Download the project from [GitHub link here].
-2. Open it in Unity [your version].
+1. Download the project from [.exe link here](https://github.com/Jakkarin-Promsee/FFH).
+2. Extract File
+3. Open FFH.exe
+
+## 🚀 Installation & Setup Unity Project
+
+1. Download the project from [GitHub link here](https://github.com/Jakkarin-Promsee/FFH).
+2. Open it in Unity [2022.3.51f1].
 3. Press Play to start the game.
