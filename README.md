@@ -47,12 +47,12 @@ Thank you to the following creators for providing free assets used in this game:
 
 ## 🚀 Installation & Setup Game
 
-1. Download the project from [.exe link here](https://github.com/Jakkarin-Promsee/FFH).
+1. Download the project from [.exe link here](https://github.com/Jakkarin-Promsee/FireFighter).
 2. Extract File
 3. Open FFH.exe
 
 ## 🚀 Installation & Setup Unity Project
 
-1. Download the project from [GitHub link here](https://github.com/Jakkarin-Promsee/FFH).
+1. Download the project from [Github link here](https://drive.google.com/file/d/1NM40TZmwzREKyqMfV-RoobIqByqmnkLf/view?usp=drive_link).
 2. Open it in Unity [2022.3.51f1].
 3. Press Play to start the game.
