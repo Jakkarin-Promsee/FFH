@@ -8,6 +8,8 @@ public class Bomp : MonoBehaviour
     public Db db;
     public GameObject bombEF;
 
+    public AudioSource audioSource;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Water")) // Check if the object is water
@@ -18,12 +20,13 @@ public class Bomp : MonoBehaviour
 
     IEnumerator BombExplosion()
     {
+        audioSource.Play();
         // Instantiate the water effect at the fire’s position
         GameObject effect = Instantiate(bombEF, transform.position, Quaternion.identity);
 
         // Destroy(gameObject); // Destroy the fire object
 
-        yield return new WaitForSeconds(1f); // Wait 2 seconds before destroying effect
+        yield return new WaitForSeconds(2f); // Wait 2 seconds before destroying effect
 
         Destroy(effect); // Destroy the water effect
 

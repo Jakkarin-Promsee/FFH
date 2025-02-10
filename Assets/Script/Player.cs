@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public Transform dropPoint;       // Where water drops from
     public float dropCD = 0.1f;
     public AudioSource waterSFX;      // Sound effect for dropping water
+    private bool canPlay = true;
 
     float currentDropT = 0;
 
@@ -30,12 +31,39 @@ public class Player : MonoBehaviour
         db.Reset();
     }
 
+    IEnumerator EnablePlayAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        canPlay = true; // Enable playing again after delay
+    }
+
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Return) && canPlay)
+        {
+            if (!waterSFX.isPlaying)
+            {
+                waterSFX.Play();
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Return))
+        {
+            waterSFX.Stop();
+            canPlay = false; // Prevent immediate replay
+            StartCoroutine(EnablePlayAfterDelay(0.2f)); // Wait 0.2s before allowing play again
+        }
+
         if (db.star > winStarRequire)
         {
             db.SetWin(1);
             SceneManager.LoadScene(winingScence);
+        }
+
+        if (db.star <= 0 && db.score < 0)
+        {
+            db.SetWin(-1);
+            SceneManager.LoadScene("wining");
         }
 
         for (int i = 0; i < starPrefab.Length; i++)
@@ -71,10 +99,5 @@ public class Player : MonoBehaviour
         // Instantiate water effect
         Instantiate(waterEffect, dropPoint.position, Quaternion.identity);
 
-        // Play water sound effect
-        if (waterSFX != null)
-        {
-            waterSFX.Play();
-        }
     }
 }

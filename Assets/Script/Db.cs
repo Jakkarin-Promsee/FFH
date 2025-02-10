@@ -12,11 +12,21 @@ public class Db : ScriptableObject
     {
         score += points;
 
+        if (points < 0)
+        {
+            while (star >= 1)
+            {
+                star--;
+                score += 10;
+            }
+        }
+
         while (score >= 10)
         {
             star++;
             score -= 10;
         }
+
 
     }
 

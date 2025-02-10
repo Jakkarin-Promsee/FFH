@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wining.unity
     guid: f2147d22c6519104e8c44acbb92c3942
+  - enabled: 1
+    path: Assets/Scenes/GamePlay 1.unity
+    guid: 342e2a7f73ede9e49aff81960783e8e5
+  - enabled: 1
+    path: Assets/Scenes/GamePlay 2.unity
+    guid: 94faa71f07d64764a96a09a1b49ec7b5
   m_configObjects: {}

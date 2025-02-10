@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DbLog
   m_EditorClassIdentifier: 
   isWin: -1
-  score: 4
-  star: 6
-  time: 185
+  score: -1
+  star: 0
+  time: 9.003556
