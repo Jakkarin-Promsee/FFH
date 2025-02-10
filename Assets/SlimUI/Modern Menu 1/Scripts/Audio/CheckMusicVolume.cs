@@ -5,21 +5,19 @@ namespace SlimUI.ModernMenu
 {
 	public class CheckMusicVolume : MonoBehaviour
 	{
+		public Db db;
 		public void Start()
 		{
-			if (!PlayerPrefs.HasKey("MusicVolume"))
-			{
-				PlayerPrefs.SetFloat("MusicVolume", 0.5f); // Default volume
-				PlayerPrefs.Save();
-			}
-
 			// remember volume level from last time
-			GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
+			GetComponent<AudioSource>().volume = db.MusicVolume;
+			GetComponent<AudioSource>().volume = db.MusicVolume;
 		}
 
 		public void UpdateVolume()
 		{
+			// GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
 			GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
+			db.MusicVolume = PlayerPrefs.GetFloat("MusicVolume");
 		}
 	}
 }

@@ -8,6 +8,8 @@ public class Db : ScriptableObject
     public int star;
     public float time;
 
+    public float MusicVolume = 0.5f;
+
     public void AddScore(int points)
     {
         score += points;
