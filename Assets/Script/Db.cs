@@ -14,7 +14,7 @@ public class Db : ScriptableObject
 
         if (points < 0)
         {
-            while (star >= 1)
+            while (star >= 1 && score < 0)
             {
                 star--;
                 score += 10;
@@ -43,7 +43,7 @@ public class Db : ScriptableObject
     public void Reset()
     {
         isWin = 0;
-        score = 0;
+        score = 5;
         star = 0;
         time = 0;
     }

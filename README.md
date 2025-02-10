@@ -1,4 +1,4 @@
-# [Your Game Name]
+# Fire Fighter
 
 ## 🎮 About the Game
 

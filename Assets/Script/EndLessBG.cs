@@ -34,7 +34,7 @@ public class EndLessBG : MonoBehaviour
     void Update()
     {
         // Check if the helicopter has passed the first background's endMarker
-        if (helicopter.position.z > activeBackgrounds.Peek().GetComponent<MapPiece>().endMarker.position.z + 100)
+        if (helicopter.position.z > activeBackgrounds.Peek().GetComponent<MapPiece>().endMarker.position.z + 150)
         {
             firstBackground = SpawnNewBackground(firstBackground.GetComponent<MapPiece>().endMarker.position);
 

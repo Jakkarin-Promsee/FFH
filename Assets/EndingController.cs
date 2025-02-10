@@ -42,7 +42,8 @@ public class EndingController : MonoBehaviour
             ss = "" + Mathf.FloorToInt(db.time % 60);
 
         timeTMP.text = "Time Play: " + mm + ":" + ss;
-        scoreTMP.text = "Score: " + db.star * 10 + db.score;
+        int score = db.star * 10 + db.score;
+        scoreTMP.text = "Score: " + score;
     }
 
     // Update is called once per frame
