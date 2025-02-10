@@ -5,11 +5,19 @@ public class Db : ScriptableObject
 {
     public int isWin = 0; //-1 lose, 0 unknown, 1 win
     public int score;
+    public int star;
     public float time;
 
     public void AddScore(int points)
     {
         score += points;
+
+        while (score >= 10)
+        {
+            star++;
+            score -= 10;
+        }
+
     }
 
     public void AddTime(float t)
@@ -26,6 +34,7 @@ public class Db : ScriptableObject
     {
         isWin = 0;
         score = 0;
+        star = 0;
         time = 0;
     }
 }

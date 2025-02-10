@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c7eabfe8a9d44459c4b558797cf93e, type: 3}
   m_Name: DbLog
   m_EditorClassIdentifier: 
-  isWin: 0
-  score: 0
-  time: 0
+  isWin: -1
+  score: 4
+  star: 6
+  time: 185

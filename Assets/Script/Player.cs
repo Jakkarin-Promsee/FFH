@@ -1,11 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public int winStarRequire = 5;
+    public Sprite nonStar;
+    public Sprite fullStar;
+    public Image[] starPrefab;
+    public String winingScence = "Wining";
     public Db db;
     public TextMeshPro text;
     public TextMeshPro textBg;
@@ -25,6 +32,20 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (db.star > winStarRequire)
+        {
+            db.SetWin(1);
+            SceneManager.LoadScene(winingScence);
+        }
+
+        for (int i = 0; i < starPrefab.Length; i++)
+        {
+            if (i < db.star)
+                starPrefab[i].sprite = fullStar;
+            else
+                starPrefab[i].sprite = nonStar;
+        }
+
         db.AddTime(Time.deltaTime);
 
         string txt = "Score: " + db.score + "/10";

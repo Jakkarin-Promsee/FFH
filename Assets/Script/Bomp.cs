@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Bomp : MonoBehaviour
 {
     public Db db;
-    public string endingScence = "Losing";
     public GameObject bombEF;
 
     private void OnTriggerEnter(Collider other)
@@ -30,6 +29,6 @@ public class Bomp : MonoBehaviour
 
         db.SetWin(-1);
 
-        SceneManager.LoadScene(endingScence);
+        SceneManager.LoadScene("wining");
     }
 }
